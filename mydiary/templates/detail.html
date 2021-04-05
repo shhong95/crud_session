@@ -1,0 +1,10 @@
+<h1>일기 내용 자세히 보기</h1>
+<div class = "posts">
+	{% if post.pub_date %}
+	<div class = "date">
+		{{ post.pub_date }}
+	</div>
+	{% endif %}
+	<h1> {{ post.title }}</h1>
+	<p> {{ post.body|linebreaks }}</p>
+</div>
